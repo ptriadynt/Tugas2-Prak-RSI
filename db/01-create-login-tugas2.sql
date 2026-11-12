@@ -6,7 +6,7 @@ GO
 IF NOT EXISTS (SELECT 1 FROM sys.server_principals WHERE name = 'hilma')
 BEGIN
     CREATE LOGIN hilma
-        WITH PASSWORD = N'Hilma_Tugas2026!',
+        WITH PASSWORD = N'salmaa_Tugas2026!',
              DEFAULT_DATABASE = review_kantin;
 END
 GO
@@ -26,5 +26,5 @@ GO
 
 SELECT name, type_desc, authentication_type_desc
 FROM sys.database_principals
-WHERE name = 'hilma';
+WHERE name = 'salmaa';
 GO
